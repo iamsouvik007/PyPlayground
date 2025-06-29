@@ -2,11 +2,24 @@ from tkinter import *
 from tkinter import messagebox
 from my_api import GeminiNLP
 from mydb import Database
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class NLPApp:
     def __init__(self):
         self.dbo = Database()
-        self.nlp = GeminiNLP("AIzaSyAbwus-q1_OJ54Kj1HotbL1l0cJAM1RFPI")  # Use your API Key
+        
+        # Load API key from environment variable
+        api_key = os.getenv('GEMINI_API_KEY')
+        if not api_key:
+            messagebox.showerror("❌ Configuration Error", 
+                               "API key not found. Please set GEMINI_API_KEY in your .env file")
+            return
+        
+        self.nlp = GeminiNLP(api_key)
 
         self.root = Tk()
         self.root.title("✨ NLP Toolkit")
@@ -162,3 +175,4 @@ class NLPApp:
 
 # Start the app
 nlp = NLPApp()
+

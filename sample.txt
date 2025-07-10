@@ -1,1 +1,3 @@
 Hello, world!
+Hi
+How are you?

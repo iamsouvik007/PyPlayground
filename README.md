@@ -10,7 +10,8 @@
 
 A meticulously crafted Python learning repository containing 30+ interactive Jupyter notebooks, real-world projects, and comprehensive documentation. This repository serves as both a learning resource and reference documentation for Python programming concepts from basics to advanced topics including GUI development, NLP applications, and interview preparation.
 
-## 📝 Repository Purpose
+
+## 📝 Repository Purposes
 
 This repository is designed to:
 

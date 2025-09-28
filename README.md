@@ -64,7 +64,8 @@ This repository is licensed under the MIT License. Feel free to use the content 
 ## Python Cheatsheet
 
 
-[Download Python Cheatsheet](./cheatsheets/python_cheatsheet.pdf)
+![Python Cheatsheet - Part 1](./1.png)
+![Python Cheatsheet - Part 2](./2.png)
 
 ---
 
